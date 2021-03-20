@@ -6,28 +6,20 @@
 
 void fizzbuzz(int a)
 {
-  if ((a % 15 == 0))
-  {
+  if ((a % 15 == 0)) {
     std::cout << "fizzbuzz" << std::endl;
-  }
-  else if (a % 3 == 0)
-  {
+  } else if (a % 3 == 0) {
     std::cout << "fizz" << std::endl;
-  }
-  else if (a % 5 == 0)
-  {
+  } else if (a % 5 == 0) {
     std::cout << "buzz" << std::endl;
-  }
-  else
-  {
+  } else {
     std::cout << a << std::endl;
   }
 }
 
 int main()
 {
-  for (int i = 1; i <= 15; i++)
-  {
+  for (int i = 1; i <= 15; i++) {
     fizzbuzz(i);
   }
 }
