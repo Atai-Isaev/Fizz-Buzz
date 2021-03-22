@@ -1,17 +1,13 @@
 #include <iostream>
-#include <string>
 
-#include <fmt/format.h>
-#include <spdlog/spdlog.h>
-
-void fizzbuzz(int a)
+void fizzBuzz(int a)
 {
   if ((a % 15 == 0)) {
-    std::cout << "fizzbuzz" << std::endl;
+    std::cout << "Fizz Buzz" << std::endl;
   } else if (a % 3 == 0) {
-    std::cout << "fizz" << std::endl;
+    std::cout << "Fizz" << std::endl;
   } else if (a % 5 == 0) {
-    std::cout << "buzz" << std::endl;
+    std::cout << "Buzz" << std::endl;
   } else {
     std::cout << a << std::endl;
   }
@@ -20,6 +16,6 @@ void fizzbuzz(int a)
 int main()
 {
   for (int i = 1; i <= 15; i++) {
-    fizzbuzz(i);
+    fizzBuzz(i);
   }
 }
